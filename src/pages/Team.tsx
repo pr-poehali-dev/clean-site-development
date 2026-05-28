@@ -2,6 +2,8 @@ import Icon from '@/components/ui/icon';
 
 const TEAM_IMG = 'https://cdn.poehali.dev/projects/eac37e07-e50b-453d-8e30-491d4188a721/files/774d6c4d-78b4-4832-a668-77cc03625089.jpg';
 const HERO_IMG = 'https://cdn.poehali.dev/projects/eac37e07-e50b-453d-8e30-491d4188a721/files/53718332-c882-46b3-ab73-e57cb7bace99.jpg';
+const DMITRY_IMG = 'https://cdn.poehali.dev/projects/eac37e07-e50b-453d-8e30-491d4188a721/files/854d5e67-4b6c-47f7-94d1-bb8a04f162e7.jpg';
+const ARTEM_IMG = 'https://cdn.poehali.dev/projects/eac37e07-e50b-453d-8e30-491d4188a721/files/14847113-e397-415a-8c8e-19f880f63afb.jpg';
 
 const team = [
   {
@@ -15,7 +17,7 @@ const team = [
     name: 'Дмитрий Волков',
     role: 'Главный дизайнер',
     desc: 'Специалист по минималистичному крою и работе с тканью. Ранее работал в Zara и COS. Его кредо — сдержанность как форма силы.',
-    img: TEAM_IMG,
+    img: DMITRY_IMG,
     social: ['Instagram'],
   },
   {
@@ -29,7 +31,7 @@ const team = [
     name: 'Артём Козлов',
     role: 'Директор по маркетингу',
     desc: 'Создаёт истории вокруг бренда. 8 лет в luxury fashion marketing. Работал с BOSCO, Bosco di Ciliegi и европейскими брендами.',
-    img: TEAM_IMG,
+    img: ARTEM_IMG,
     social: ['Instagram', 'Linkedin'],
   },
 ];
