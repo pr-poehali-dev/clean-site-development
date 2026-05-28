@@ -32,7 +32,7 @@ const Team = () => {
     <div className="min-h-screen bg-[#111111] pt-24">
       {/* Hero */}
       <div className="relative h-64 overflow-hidden">
-        <img src={TEAM_IMG} alt="Team" className="w-full h-full object-cover opacity-25" />
+        <img src={SERGEY_IMG} alt="Team" className="w-full h-full object-cover opacity-25" />
         <div className="absolute inset-0 bg-gradient-to-b from-[#111111]/50 to-[#111111]" />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
           <span className="font-montserrat text-[0.6rem] tracking-[0.4em] text-[#C9A96E] uppercase mb-3">Люди бренда</span>
