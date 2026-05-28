@@ -129,8 +129,8 @@ const Contact = () => {
               <div className="space-y-6">
                 {[
                   { icon: 'MapPin', title: 'Адрес', lines: ['Москва, ул. Петровка, 15', 'Торговый центр «Новинский»'] },
-                  { icon: 'Phone', title: 'Телефон', lines: ['+7 (495) 123-45-67'] },
-                  { icon: 'Mail', title: 'Email', lines: ['hello@novelle.ru', 'press@novelle.ru'] },
+                  { icon: 'Phone', title: 'Телефон', lines: ['+7 (906) 771-69-71'] },
+                  { icon: 'Mail', title: 'Email', lines: ['cdnovsergej@gmail.com'] },
                   { icon: 'Clock', title: 'Часы работы', lines: ['Пн–Пт: 10:00 – 20:00', 'Сб–Вс: 11:00 – 19:00'] },
                 ].map((item) => (
                   <div key={item.title} className="flex gap-5 group">

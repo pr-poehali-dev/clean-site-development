@@ -53,8 +53,8 @@ const Footer = () => {
             <ul className="space-y-3">
               {[
                 { icon: 'MapPin', text: 'Москва, ул. Петровка, 15' },
-                { icon: 'Phone', text: '+7 (495) 123-45-67' },
-                { icon: 'Mail', text: 'hello@novelle.ru' },
+                { icon: 'Phone', text: '+7 (906) 771-69-71' },
+                { icon: 'Mail', text: 'cdnovsergej@gmail.com' },
               ].map((item) => (
                 <li key={item.text} className="flex items-start gap-3">
                   <Icon name={item.icon} fallback="Circle" size={13} className="text-[#C9A96E]/60 mt-0.5 shrink-0" />
