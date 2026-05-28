@@ -1,20 +1,26 @@
 import { useState } from 'react';
 import Icon from '@/components/ui/icon';
 
-const COLLECTION_IMG = 'https://cdn.poehali.dev/projects/eac37e07-e50b-453d-8e30-491d4188a721/files/b222ea66-5b1a-4df1-ae67-1c4c6e10156e.jpg';
-const HERO_IMG = 'https://cdn.poehali.dev/projects/eac37e07-e50b-453d-8e30-491d4188a721/files/53718332-c882-46b3-ab73-e57cb7bace99.jpg';
+const IMG_PALTO   = 'https://cdn.poehali.dev/projects/eac37e07-e50b-453d-8e30-491d4188a721/files/e4221a3c-5b5c-4aaf-b264-7485bd50e4a9.jpg';
+const IMG_KOSTYUM = 'https://cdn.poehali.dev/projects/eac37e07-e50b-453d-8e30-491d4188a721/files/79a39bf3-f323-47ec-9e8d-74f05352ddca.jpg';
+const IMG_PLATE   = 'https://cdn.poehali.dev/projects/eac37e07-e50b-453d-8e30-491d4188a721/files/7c1fba7e-7420-4a72-99d2-eb52f0cc4eee.jpg';
+const IMG_RUBASHKA= 'https://cdn.poehali.dev/projects/eac37e07-e50b-453d-8e30-491d4188a721/files/feb7ffe7-e29a-43c6-aeab-616c037e9d1c.jpg';
+const IMG_ZHAKET  = 'https://cdn.poehali.dev/projects/eac37e07-e50b-453d-8e30-491d4188a721/files/e10abe45-07dc-4c52-ba83-723e62f695f3.jpg';
+const IMG_BRYUKI  = 'https://cdn.poehali.dev/projects/eac37e07-e50b-453d-8e30-491d4188a721/files/57350d41-c4fc-49b5-8b9e-1a0aa85cfedd.jpg';
+const IMG_BLUZA   = 'https://cdn.poehali.dev/projects/eac37e07-e50b-453d-8e30-491d4188a721/files/22778752-e4e0-4bc3-a863-e318426a6faf.jpg';
+const IMG_SVITER  = 'https://cdn.poehali.dev/projects/eac37e07-e50b-453d-8e30-491d4188a721/files/d7b1cd2c-2191-467d-8592-0bf9607c3b19.jpg';
 
 const categories = ['Все', 'Новинки', 'Женская', 'Мужская', 'Аксессуары'];
 
 const products = [
-  { id: 1, name: 'Пальто Noir', category: 'Женская', price: '32 400 ₽', tag: 'Новинка', img: HERO_IMG },
-  { id: 2, name: 'Костюм Essence', category: 'Мужская', price: '28 900 ₽', tag: '', img: COLLECTION_IMG },
-  { id: 3, name: 'Платье Story', category: 'Женская', price: '18 700 ₽', tag: 'Хит', img: HERO_IMG },
-  { id: 4, name: 'Рубашка Minimal', category: 'Мужская', price: '12 300 ₽', tag: '', img: COLLECTION_IMG },
-  { id: 5, name: 'Жакет Terra', category: 'Женская', price: '24 500 ₽', tag: 'Новинка', img: HERO_IMG },
-  { id: 6, name: 'Брюки Classic', category: 'Мужская', price: '14 800 ₽', tag: '', img: COLLECTION_IMG },
-  { id: 7, name: 'Блуза Silence', category: 'Женская', price: '9 200 ₽', tag: '', img: HERO_IMG },
-  { id: 8, name: 'Свитер Olive', category: 'Мужская', price: '11 600 ₽', tag: '', img: COLLECTION_IMG },
+  { id: 1, name: 'Пальто Noir',     category: 'Женская', price: '32 400 ₽', tag: 'Новинка', img: IMG_PALTO },
+  { id: 2, name: 'Костюм Essence',  category: 'Мужская', price: '28 900 ₽', tag: '',        img: IMG_KOSTYUM },
+  { id: 3, name: 'Платье Story',    category: 'Женская', price: '18 700 ₽', tag: 'Хит',     img: IMG_PLATE },
+  { id: 4, name: 'Рубашка Minimal', category: 'Мужская', price: '12 300 ₽', tag: '',        img: IMG_RUBASHKA },
+  { id: 5, name: 'Жакет Terra',     category: 'Женская', price: '24 500 ₽', tag: 'Новинка', img: IMG_ZHAKET },
+  { id: 6, name: 'Брюки Classic',   category: 'Мужская', price: '14 800 ₽', tag: '',        img: IMG_BRYUKI },
+  { id: 7, name: 'Блуза Silence',   category: 'Женская', price: '9 200 ₽',  tag: '',        img: IMG_BLUZA },
+  { id: 8, name: 'Свитер Olive',    category: 'Мужская', price: '11 600 ₽', tag: '',        img: IMG_SVITER },
 ];
 
 const Catalog = () => {

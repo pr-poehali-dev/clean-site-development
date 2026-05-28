@@ -1,34 +1,34 @@
 import Icon from '@/components/ui/icon';
 
 const TEAM_IMG = 'https://cdn.poehali.dev/projects/eac37e07-e50b-453d-8e30-491d4188a721/files/774d6c4d-78b4-4832-a668-77cc03625089.jpg';
-const HERO_IMG = 'https://cdn.poehali.dev/projects/eac37e07-e50b-453d-8e30-491d4188a721/files/53718332-c882-46b3-ab73-e57cb7bace99.jpg';
-const DMITRY_IMG = 'https://cdn.poehali.dev/projects/eac37e07-e50b-453d-8e30-491d4188a721/files/854d5e67-4b6c-47f7-94d1-bb8a04f162e7.jpg';
+const SERGEY_IMG = 'https://cdn.poehali.dev/projects/eac37e07-e50b-453d-8e30-491d4188a721/files/32f378bb-80da-4d8f-a742-2522372e12c4.jpg';
+const ARTEM_NEW_IMG = 'https://cdn.poehali.dev/projects/eac37e07-e50b-453d-8e30-491d4188a721/files/6f251100-5f1f-4d95-8152-d098a1d0b79e.jpg';
 const ARTEM_IMG = 'https://cdn.poehali.dev/projects/eac37e07-e50b-453d-8e30-491d4188a721/files/14847113-e397-415a-8c8e-19f880f63afb.jpg';
 
 const team = [
   {
-    name: 'Анастасия Новикова',
+    name: 'Сергей Алексеевич',
     role: 'Основатель & Креативный директор',
-    desc: 'Более 12 лет в индустрии моды. Выпускница Parsons School of Design. Верит, что одежда — это язык, на котором мы говорим с миром.',
-    img: HERO_IMG,
+    desc: 'Более 12 лет в индустрии моды. Выпускник Parsons School of Design. Верит, что одежда — это язык, на котором мы говорим с миром.',
+    img: SERGEY_IMG,
     social: ['Instagram', 'Linkedin'],
   },
   {
-    name: 'Дмитрий Волков',
+    name: 'Артём Козлов',
     role: 'Главный дизайнер',
     desc: 'Специалист по минималистичному крою и работе с тканью. Ранее работал в Zara и COS. Его кредо — сдержанность как форма силы.',
-    img: DMITRY_IMG,
+    img: ARTEM_NEW_IMG,
     social: ['Instagram'],
   },
   {
     name: 'Мария Соколова',
     role: 'Head of Production',
     desc: 'Контролирует весь производственный цикл. Убеждена, что устойчивое производство — не тренд, а обязательство перед будущим.',
-    img: HERO_IMG,
+    img: TEAM_IMG,
     social: ['Linkedin'],
   },
   {
-    name: 'Артём Козлов',
+    name: 'Игорь Васильев',
     role: 'Директор по маркетингу',
     desc: 'Создаёт истории вокруг бренда. 8 лет в luxury fashion marketing. Работал с BOSCO, Bosco di Ciliegi и европейскими брендами.',
     img: ARTEM_IMG,

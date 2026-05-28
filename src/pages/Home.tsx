@@ -2,14 +2,18 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Icon from '@/components/ui/icon';
 
-const HERO_IMG = 'https://cdn.poehali.dev/projects/eac37e07-e50b-453d-8e30-491d4188a721/files/53718332-c882-46b3-ab73-e57cb7bace99.jpg';
+const HERO_IMG     = 'https://cdn.poehali.dev/projects/eac37e07-e50b-453d-8e30-491d4188a721/files/53718332-c882-46b3-ab73-e57cb7bace99.jpg';
 const COLLECTION_IMG = 'https://cdn.poehali.dev/projects/eac37e07-e50b-453d-8e30-491d4188a721/files/b222ea66-5b1a-4df1-ae67-1c4c6e10156e.jpg';
+const IMG_PALTO    = 'https://cdn.poehali.dev/projects/eac37e07-e50b-453d-8e30-491d4188a721/files/e4221a3c-5b5c-4aaf-b264-7485bd50e4a9.jpg';
+const IMG_KOSTYUM  = 'https://cdn.poehali.dev/projects/eac37e07-e50b-453d-8e30-491d4188a721/files/79a39bf3-f323-47ec-9e8d-74f05352ddca.jpg';
+const IMG_PLATE    = 'https://cdn.poehali.dev/projects/eac37e07-e50b-453d-8e30-491d4188a721/files/7c1fba7e-7420-4a72-99d2-eb52f0cc4eee.jpg';
+const IMG_RUBASHKA = 'https://cdn.poehali.dev/projects/eac37e07-e50b-453d-8e30-491d4188a721/files/feb7ffe7-e29a-43c6-aeab-616c037e9d1c.jpg';
 
 const products = [
-  { id: 1, name: 'Пальто Noir', category: 'Женская', price: '32 400 ₽', tag: 'Новинка' },
-  { id: 2, name: 'Костюм Essence', category: 'Мужская', price: '28 900 ₽', tag: '' },
-  { id: 3, name: 'Платье Story', category: 'Женская', price: '18 700 ₽', tag: 'Хит' },
-  { id: 4, name: 'Рубашка Minimal', category: 'Мужская', price: '12 300 ₽', tag: '' },
+  { id: 1, name: 'Пальто Noir',     category: 'Женская', price: '32 400 ₽', tag: 'Новинка', img: IMG_PALTO },
+  { id: 2, name: 'Костюм Essence',  category: 'Мужская', price: '28 900 ₽', tag: '',        img: IMG_KOSTYUM },
+  { id: 3, name: 'Платье Story',    category: 'Женская', price: '18 700 ₽', tag: 'Хит',     img: IMG_PLATE },
+  { id: 4, name: 'Рубашка Minimal', category: 'Мужская', price: '12 300 ₽', tag: '',        img: IMG_RUBASHKA },
 ];
 
 const values = [
@@ -102,7 +106,7 @@ const Home = () => {
             >
               <div className="relative aspect-[3/4] bg-[#1a1a1a] overflow-hidden mb-4">
                 <img
-                  src={COLLECTION_IMG}
+                  src={product.img}
                   alt={product.name}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100"
                 />
