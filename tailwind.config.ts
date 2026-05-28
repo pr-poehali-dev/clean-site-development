@@ -7,6 +7,7 @@ export default {
 		"./components/**/*.{ts,tsx}",
 		"./app/**/*.{ts,tsx}",
 		"./src/**/*.{ts,tsx}",
+			"./1779951608369439984.html"
 	],
 	prefix: "",
 	theme: {
@@ -18,7 +19,18 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				cormorant: ['Cormorant Garamond', 'serif'],
+				montserrat: ['Montserrat', 'sans-serif'],
+			},
 			colors: {
+				'novelle-black': '#111111',
+				'novelle-dark': '#2B2B2B',
+				'novelle-beige': '#DCCCB3',
+				'novelle-white': '#FFFFFF',
+				'novelle-olive': '#7A8A65',
+				'novelle-terra': '#C46A4A',
+				'novelle-gold': '#C9A96E',
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
@@ -69,6 +81,18 @@ export default {
 				sm: 'calc(var(--radius) - 4px)'
 			},
 			keyframes: {
+				'fade-in-up': {
+					'0%': { opacity: '0', transform: 'translateY(30px)' },
+					'100%': { opacity: '1', transform: 'translateY(0)' },
+				},
+				'fade-in': {
+					'0%': { opacity: '0' },
+					'100%': { opacity: '1' },
+				},
+				'logo-reveal': {
+					'0%': { opacity: '0', letterSpacing: '0.8em', transform: 'translateY(-10px)' },
+					'100%': { opacity: '1', letterSpacing: '0.3em', transform: 'translateY(0)' },
+				},
 				'accordion-down': {
 					from: {
 						height: '0'
@@ -84,10 +108,15 @@ export default {
 					to: {
 						height: '0'
 					}
-				}
+				},
+				'scroll': {
+					'0%': { transform: 'translateX(0)' },
+					'100%': { transform: 'translateX(-50%)' },
+				},
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
+				'scroll': 'scroll 25s linear infinite',
 				'accordion-up': 'accordion-up 0.2s ease-out'
 			}
 		}
